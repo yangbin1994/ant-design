@@ -227,7 +227,7 @@ export default class Upload extends React.Component<UploadProps, any> {
     if (result === false) {
       this.onChange({
         file,
-        fileList,
+        fileList: [],
       });
       return false;
     } else if (result && (result as PromiseLike<any>).then) {
